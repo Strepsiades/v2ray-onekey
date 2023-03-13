@@ -234,7 +234,7 @@ port_exist_check(){
 }
 
 acme(){
-    ~/.acme.sh/acme.sh --issue -d ${domain} --standalone -k ec-384 --force
+    ~/.acme.sh/acme.sh --issue -d ${domain} --standalone -k ec-384 --force -m zhaoyuanliang93@live.com
     if [[ $? -eq 0 ]];then
         echo -e "${OK} ${GreenBG} SSL 证书生成成功 ${Font}"
         sleep 2
